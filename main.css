@@ -1,0 +1,173 @@
+body {
+    background-color: #fafafa;
+}
+
+.content {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contetnt__circle {
+    min-width: 500px;
+    min-height: 500px;
+    max-width: 500px;
+    max-height: 500px;
+    position: relative;
+}
+
+.contetnt__circle-1 {
+    top: 150px;
+    left: 150px;
+}
+
+.contetnt__circle-2 {
+    top: -70px;
+    left: 0px;
+}
+
+.circle__empty{
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.circle__fill{
+    background-color: black;
+    border-radius: 50%;
+}
+
+.circle__s{
+    width: 10px;
+    height: 10px;
+    top:49%;
+    left:49%;
+    position: absolute;
+}
+
+.circle__m{
+    width: 50px;
+    height: 50px;
+    top:45%;
+    left:45%;
+    position: absolute;
+}
+
+.circle__l{
+    width: 80px;
+    height: 80px;
+    top:42%;
+    left:42%;
+    position: absolute;
+}
+
+.circle__animation__fast{
+    animation-duration: 5s;
+}
+
+.circle__animation__average{
+    animation-duration: 9s;
+}
+
+.circle__animation__slow{
+    animation-duration: 15s;
+}
+
+.circle__animation{
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+}
+
+.circle__animation__0{
+    animation-name: border-circle-0;
+}
+
+.circle__animation__90{
+    animation-name: border-circle-90;
+}
+
+.circle__animation__180{
+    animation-name: border-circle-180;
+}
+
+.circle__animation__270{
+    animation-name: border-circle-270;
+}
+
+@keyframes border-circle-0 {
+    from{
+        transform: rotate(0deg) translateX(250px) rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg) translateX(250px) rotate(-360deg);
+    }
+}
+
+@keyframes border-circle-90 {
+    from{
+        transform: rotate(90deg) translateX(250px) rotate(90deg);
+    }
+    to{
+        transform: rotate(450deg) translateX(250px) rotate(-450deg);
+    }
+}
+
+@keyframes border-circle-180 {
+    from{
+        transform: rotate(-180deg) translateX(250px) rotate(-180deg);
+    }
+    to{
+        transform: rotate(180deg) translateX(250px) rotate(-180deg);
+    }
+}
+
+@keyframes border-circle-270 {
+    from{
+        transform: rotate(-90deg) translateX(250px) rotate(-90deg);
+    }
+    to{
+        transform: rotate(270deg) translateX(250px) rotate(-270deg);
+    }
+}
+
+
+.contetnt__circle-3  {
+    min-width: 300px;
+    min-height: 300px;
+    max-width: 300px;
+    max-height: 300px;
+    top: 230px;
+    left: -450px;
+    position: relative;
+}
+
+.circle__m-smallCircle{
+    width: 50px;
+    height: 50px;
+    top:43%;
+    left:43%;
+    position: absolute;
+}
+
+.circle__animation__0-smallCircle{
+    animation-name: border-circle-0-smallCircle;
+}
+
+
+@keyframes border-circle-0-smallCircle {
+    from{
+        transform: rotate(0deg) translateX(150px) rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg) translateX(150px) rotate(-360deg);
+    }
+}
